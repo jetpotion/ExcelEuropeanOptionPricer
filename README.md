@@ -1,5 +1,4 @@
 # ExcelEuropeanOptionPricer
-EuropeanOptionPricer
 -Utilities DJD is an embedded project folder library that supports ExcelVisualization,Exceptions,Matrix Operations(overloaded), and Range supports for the program.
 -Group A prices European Options  with given Carry and prints out the output to console. It is also capable pricing EuropeanOption option with just an array of stockprices or interest rates or volatility or Time to Expiration.  It also calculates Option Greeks such as Deltas,Vegas and Gamma in a similar fashion as European Options. All the calculations and pricing using the black scholes-merton model and boost libraries to speed up computations
 -Group B prices the Perpetual American Option with a closed Solution and prints out of console. Again using the black scholes model for the perptual American Option.
