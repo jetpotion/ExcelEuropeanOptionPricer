@@ -1,11 +1,11 @@
 # ExcelEuropeanOptionPricer
 -__Utilities DJD__ is an embedded project folder library that supports ExcelVisualization,Exceptions,Matrix Operations(overloaded), and Range libraries. They supply the necessary vital Operations in the other project folders.
 
--__Group A__ prices European Options  with given Carry and prints out the output to console. It is also capable of pricing European Options with just an array of stockprices or interest rates or volatility or Time to Expiration(given every other parameter being constants).  It also calculates Option Greeks such as Deltas,Vegas and Gamma.. All the calculations and pricing uses the black scholes-merton model and boost libraries to speed up computations.
+-__Group A__ calculates European options  with no dividend and prints out the output to console. It is also capable of pricing European Options with just an array of stockprices or interest rates or volatility or Time to Expiration(given every other parameter being constants).  It also calculates Option Greeks such as Deltas,Vegas and Gammas. All the calculations and pricing uses the black scholes-merton model and boost libraries to speed up computations.
 
--__Group B__ prices the Perpetual American Option with a closed solution and prints out to console. This again uses the black scholes model for the perptual American Option.
+-__Group B__ prices the Perpetual American option with a closed solution and prints out to console. This again uses the black scholes model for the perptual American Option.
 
--__Group C__ uses the monte carlo method to price European Option and test out the Euler-Maruyama scheme to approximate the black scholes schotastic differential equations
+-__Group C__ uses the Monte Carlo method to price European option and test out the Euler-Maruyama scheme to approximate the Black Scholes schotastic differential equations
 
 -__Group D__ calculates Standard deviation and Standard Error of Monte Carlo method as described in Group C
 
