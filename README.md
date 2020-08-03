@@ -9,7 +9,9 @@ EuropeanOptionPricer
 -Group F Uses the finite difference method to calculate an approximation of OptionPrices.
 
 # Build instruction
-- Clones or download the .zip file
-- Make sure you have the latest version of boost installed.
+- The Projects only support MSVC compilers. So only visual studio is supported.
+- Clone from git or download the .zip file
+- Make sure you have the latest version of boost  C++ library installed. Follow these instructions to sucessfully build boost. 
+https://www.boost.org/doc/libs/1_55_0/doc/html/bbv2/installation.html
 - Make sure dependencies in the "Include additional directories" include the boost library
-- The Projects only support MSVC compilers.
+
