@@ -1,0 +1,10 @@
+﻿  NormalGenerator.cpp
+  TestMC.cpp
+C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\Group D\Group D\TestMC.cpp(42,20): warning C4018: '<': signed/unsigned mismatch
+C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\Group D\Group D\TestMC.cpp(184): message : see reference to function template instantiation 'boost::tuples::tuple<double,double,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type,boost::tuples::null_type> standardError<double>(const std::vector<double,std::allocator<double>> &,const T &,const T &)' being compiled
+          with
+          [
+              T=double
+          ]
+  Generating Code...
+  Group D.vcxproj -> C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\Group D\Group D\Debug\Group D.exe
