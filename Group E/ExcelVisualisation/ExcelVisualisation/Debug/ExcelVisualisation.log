@@ -1,0 +1,9 @@
+﻿  StringConversions.cpp
+  DatasimException.cpp
+  ExcelEuropean.cpp
+C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\UtilitiesDJD\ExcelDriver\ExcelImports.cpp(69,271): warning C4192: automatically excluding 'IFont' while importing type library 'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE'
+C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\UtilitiesDJD\ExcelDriver\ExcelImports.cpp(69,271): warning C4192: automatically excluding 'IPicture' while importing type library 'C:\Program Files\Microsoft Office\root\Office16\EXCEL.EXE'
+  Option.cpp
+  Generating Code...
+  EuropeanOption.cpp
+  ExcelVisualisation.vcxproj -> C:\Users\William Zhang\Desktop\QuantHomework\William_Zhang Level 9\Group E\ExcelVisualisation\Debug\ExcelVisualisation.exe
