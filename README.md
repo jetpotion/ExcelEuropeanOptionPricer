@@ -11,7 +11,18 @@
 
 -__Group E__ calculates the European Option and prints/graph them in Excel. It uses the COM binary scheme for Excel Visualization used in the UtilitiesDJD folder
 
--__Group F__ ises the Finite Difference method to calculate an approximation of OptionPrices.
+-__Group F__ ises the Finite Difference method to calculate an approximation of Option Prices.
+
+
+Here are all the formulas I used in the black scholes model
+:<math>S(t)</math>, the price of the underlying asset at time ''t''.;
+:<math>V(S, t)</math>, the price of the option as a function of the underlying asset ''S'', at time ''t'';
+:<math>C(S, t)</math>, the price of a European call option and <math>P(S, t)</math> the price of a European put option;
+:<math>K</math>, the [[strike price]] of the option, also known as the exercise price;
+:<math>r</math>, the annualized [[risk-free interest rate]], [[Continuous compounding|continuously compounded]] Also known as the [[force of interest]];
+:<math>\mu</math>, the [[drift rate]] of <math>S</math>, annualized;
+:<math>\sigma</math>, the standard deviation of the stock's returns; this is the square root of the [[quadratic variation]] of the stock's log price process;
+:<math>t</math>, a time in years; we generally use: now <math>= 0 </math>, expiry <math> = T </math>;
 
 # Build instruction
 - The Projects only support MSVC compilers and thus it is recommended that Visual Studio IDE is used.
