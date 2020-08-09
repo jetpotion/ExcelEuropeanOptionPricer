@@ -13,6 +13,7 @@
 
 -__Group F__ ises the Finite Difference method to calculate an approximation of Option Prices.
 
+# Formula Used 
 
 ![ScreenShot](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture.PNG)
 ![New](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture1.PNG)
