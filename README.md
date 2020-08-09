@@ -13,7 +13,8 @@
 
 -__Group F__ ises the Finite Difference method to calculate an approximation of Option Prices.
 
-![capture](ExcelEuropeanOptionPricer/Capture.PNG)
+
+![ScreenShot](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture.PNG)
 
 # Build instruction
 - The Projects only support MSVC compilers and thus it is recommended that Visual Studio IDE is used.
