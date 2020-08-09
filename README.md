@@ -15,6 +15,7 @@
 
 
 ![ScreenShot](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture.PNG)
+![New](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture1.PNG)
 
 # Build instruction
 - The Projects only support MSVC compilers and thus it is recommended that Visual Studio IDE is used.
