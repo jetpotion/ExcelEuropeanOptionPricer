@@ -14,12 +14,7 @@
 -__Group F__ ises the Finite Difference method to calculate an approximation of Option Prices.
 
 
-\begin{align}
-  C(S_t, t) &= N(d_1)S_t - N(d_2) PV(K) \\
-     d_1 &= \frac{1}{\sigma\sqrt{T - t}}\left[\ln\left(\frac{S_t}{K}\right) + \left(r + \frac{\sigma^2}{2}\right)(T - t)\right] \\
-     d_2 &= d_1 - \sigma\sqrt{T - t} \\
-PV(K) &=Ke^{-r(T - t)}
-\end{align}</math>
+=
 
 # Build instruction
 - The Projects only support MSVC compilers and thus it is recommended that Visual Studio IDE is used.
