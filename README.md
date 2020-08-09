@@ -13,8 +13,7 @@
 
 -__Group F__ ises the Finite Difference method to calculate an approximation of Option Prices.
 
-
-=
+![Screenshot](capture.png)
 
 # Build instruction
 - The Projects only support MSVC compilers and thus it is recommended that Visual Studio IDE is used.
