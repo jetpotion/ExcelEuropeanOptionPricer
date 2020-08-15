@@ -25,5 +25,5 @@
 - Clone from git or download the .zip file.
 - Make sure you have the latest version of boost  C++ library installed. Follow these instructions to sucessfully build boost. 
 https://www.boost.org/doc/libs/1_55_0/doc/html/bbv2/installation.html. The version of boost I used is 1_73_0.
-- Make sure dependencies in the "Include additional directories" include the boost library and make sure you direct the path to UtilitiesDJD. Download all the folders are once.
+- Make sure dependencies in the "Include additional directories" include the boost library and make sure you direct the path to UtilitiesDJD. Download all the folders at once.
 
