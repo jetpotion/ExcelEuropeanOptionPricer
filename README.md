@@ -1,5 +1,5 @@
 # ExcelEuropeanOptionPricer
--__Utilities DJD__ is an embedded project folder library that supports ExcelVisualization,Exceptions,Matrix Operations(overloaded), and Range libraries. They supply the necessary vital Operations in the other project folders. Code contribution is credited to DataSimEducation 
+-__Utilities DJD__ is an embedded project folder library that supports ExcelVisualization,Exceptions,Matrix Operations(overloaded), and Range libraries. They supply the necessary vital Operations in the other project folders.
 
 -__Group A__ calculates European options  with no dividend and prints out the output to console. It is also capable of pricing European Options with just an array of stockprices or interest rates or volatility or Time to Expiration(given every other parameter being constants).  It also calculates Option Greeks such as Deltas,Vegas and Gammas. All the calculations and pricing uses the black scholes-merton model and boost libraries to speed up computations.
 
