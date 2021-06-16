@@ -2,7 +2,7 @@
 
 int main()
 {
-	//First compute individual stockPrices
+	//First compute individual option prices for part b)
 	OptionData data;
 	data.K = 100;
 	data.sig = 0.1;
@@ -15,12 +15,15 @@ int main()
 	//Turn into Put
 	american.Toggle(); 
 	cout << american.toString() << endl;
+
 	//Now do part C,D(Were still in put mode)
 	vector<double>stockprices = GenerateMeshArray(10, 50, 40);
 	vector<double>optionprice = american.CalculateWithParameter(stockprices, STOCKPRICE);
 	print(optionprice, PUT, "(Put price with Array of StockPrice)");
+	//DO it for call mode
 	american.Toggle();
-	print(optionprice, CALL, "(Call Price with Array of StockPrice");
+	optionprice = american.CalculateWithParameter(stockprices, STOCKPRICE);
+	print(optionprice, CALL, "(Call Price with Array of StockPrice)");
 	
 
 }

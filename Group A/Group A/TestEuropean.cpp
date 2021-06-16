@@ -39,7 +39,7 @@ int main()
 		data.type = CALL;
 		
 		EuropeanOption d1(data);
-		//Calculate Call parity price
+		//Calculate Call parity price giving us the put price
 		double call_parity = d1.Parity();
 		cout << "Batch " << batch_number + 1 << endl;
 		cout << d1.toString() << endl;
@@ -47,8 +47,9 @@ int main()
 		vector<double>call_option_STOCKRPICE= d1.calculatewithParameter(stockprices, STOCKPRICE);
 		vector<double>call_option_IR = d1.calculatewithParameter(expiry_time, IR);
 		vector<double>call_option_volatility = d1.calculatewithParameter(volatility, VOLATILITY);
+		//Were now in put mode
 		d1.Toggle();
-		//Calculate Put parity price
+		//Calculate Put parity price that gives us the call price
 		double put_parity = d1.Parity();
 		//Calculate  put option prices with with an array of stockprice,expirytime,volatility with all other parameters fixed
 		vector<double>put_option_STOCKRPICE = d1.calculatewithParameter(stockprices, STOCKPRICE);
@@ -57,9 +58,11 @@ int main()
 		cout << endl;
 		cout << d1.toString() << endl;
 		cout << endl;
+		//Determine the parity price and wether or not if they satisfy parity 
 		cout << "Call Parity price: " << call_parity << endl;
 		cout << "Put Parity Price: " << put_parity << endl;
-		cout << "Satisfy parity?: " <<std::boolalpha  << statisfyParity(call_parity, put_parity, d1) << endl;
+		cout << "Satisfy parity?: " <<std::boolalpha  << statisfyParity(put_parity, call_parity, d1) << endl;
+		//Now print out the stock prices 
 		print(call_option_STOCKRPICE, CALL, "(Array_stockPrice)");
 		print(call_option_IR, CALL, "(Array_InterestRate)");
 		print(call_option_volatility, CALL, "(Array_Volatility)");
@@ -70,6 +73,7 @@ int main()
 		batch_number++;
 		
 	}
+	//Test the Delta data field
 	data.K = 100.0;
 	data.S = 105.0;
 	data.T = 0.5;
@@ -88,6 +92,7 @@ int main()
 	vector<double>delta_put = d2.greekswithParameter(stockprices, STOCKPRICE, DELTA);
 	vector<double>gamma_put = d2.greekswithParameter(stockprices, STOCKPRICE, GAMMA);
 	d2.Toggle(); //Were now in Call
+
 	vector<double>delta_call = d2.greekswithParameter(stockprices, STOCKPRICE, DELTA);
 	vector<double>gamma_call = d2.greekswithParameter(stockprices, STOCKPRICE, GAMMA);
 	print(delta_call, CALL, "(Delta_CALL_Stockprice");
@@ -116,9 +121,4 @@ int main()
 			d2.Toggle();	//Put it back to call
 		}
 	}
-
-
-	
-
-	
 }

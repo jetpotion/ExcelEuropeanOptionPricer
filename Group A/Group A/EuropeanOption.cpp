@@ -263,10 +263,17 @@ double CalculateOptionPrice(double T, double K, double sig, double r, double S, 
 
 	//Calculate d2
 	double d2 = d1 - sig * sqrt(T);
+	double Optionprice;
 	if (type == CALL)
-		return  S * exp((b - r) * T) * cdf(Guassian, d1) - K * exp(-r * T) * cdf(Guassian, d2);
+	{
+		Optionprice = S * exp((b - r) * T) * cdf(Guassian, d1) - K * exp(-r * T) * cdf(Guassian, d2);
+		return Optionprice;
+	}
 	else
-		return K * exp(-r * T) * cdf(Guassian, -d2) - S * exp((b - r) * T) * cdf(Guassian, -d1);
+	{
+		Optionprice = K * exp(-r * T) * cdf(Guassian, -d2) - S * exp((b - r) * T) * cdf(Guassian, -d1);
+		return Optionprice;
+	}
 
 }
 //Global function to calculate Delta with standard option parameters but with a optiontype
@@ -307,7 +314,7 @@ double CalculateTheta(double T, double K, double sig, double r, double S, double
 //Put: The Put price of a function
 bool statisfyParity(double call, double put, const EuropeanOption& option)
 {
-	double TOLERANCE = 0.01;
+	double TOLERANCE = 0.05;
 	double LEFTPRICE = call + option.K * exp(-option.r * option.T);
 	double RIGHTPRICE = put + option.S;
 	double difference = abs(abs(LEFTPRICE) - abs(RIGHTPRICE));

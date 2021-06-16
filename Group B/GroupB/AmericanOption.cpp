@@ -40,7 +40,7 @@ string AmericanOption::toString() const
 	if (type == CALL)
 	{
 		return string("\nType: Call") + 
-			          "Asset Price: " + to_string(S)+
+			          "\nAsset Price: " + to_string(S)+
 					  "\nStrike Price: " + to_string(K) + 
 					  "\nRisk Free interest:" + to_string(r) + 
 			          "\nCost of Carry:" + to_string(b) + 
@@ -50,7 +50,7 @@ string AmericanOption::toString() const
 	else
 	{
 		return string("\nType: Put") +
-			"Asset Price: " + to_string(S) +
+			"\nAsset Price: " + to_string(S) +
 			"\nStrike Price: " + to_string(K) +
 			"\nRisk Free interest:" + to_string(r) +
 			"\nCost of Carry:" + to_string(b) +
