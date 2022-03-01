@@ -19,6 +19,7 @@
 ![New](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture1.PNG)
 ![Euler](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture3.PNG)
 ![MonteCarlo](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/Capture4.PNG)
+# Simulations performed on Excel
 ![Stock Price](https://github.com/jetpotion/ExcelEuropeanOptionPricer/blob/master/stockprice.PNG)
 
 # Build instruction
